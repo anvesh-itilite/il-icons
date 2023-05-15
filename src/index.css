@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: "Inter", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  background-color: #f1f3f5;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+}
+
+input[type="checkbox"] {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+}
+
+/* F1F3F5  #f9fafb #FBF5EF*/
+
+@layer components {
+  /* .page {
+    @apply flex h-fit flex-1 flex-col items-stretch;
+  } */
+  .section {
+    @apply flex flex-col items-center;
+  }
+  .fixed-container {
+    @apply w-screen sm:mx-6 sm:w-[calc(100%-3rem)] lg:w-[1320px];
+  }
+}
+
+@layer utilities {
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+  .animation-delay-4000 {
+    animation-delay: 4s;
+  }
+}
