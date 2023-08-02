@@ -131,39 +131,6 @@ module.exports = {
         cardborder: "inset 0 0 4px 4px blue",
         leftpanel: "1px 0px 2px 0px #1118271a, 4px 0px 8px 0px #11182726",
       },
-      animation: {
-        recommendation: "recommendation 8s infinite",
-        shimmerbg: "shimmerbg linear 2s infinite",
-      },
-      keyframes: {
-        recommendation: {
-          "0%": {
-            transform: "translate(0px, 0px) scale(1)",
-          },
-          "33%": {
-            transform: "translate(80px, -80px) scale(1.1)",
-          },
-          "66%": {
-            transform: "translate(-80px, 80px) scale(0.9)",
-          },
-          "100%": {
-            transform: "translate(0px, 0px) scale(1)",
-          },
-        },
-        shimmer: {
-          "100%": {
-            transform: "translateX(100%)",
-          },
-        },
-        shimmerbg: {
-          "0%": {
-            backgroundPosition: "100%",
-          },
-          "100%": {
-            backgroundPosition: "-100%",
-          },
-        },
-      },
     },
   },
   plugins: [],
