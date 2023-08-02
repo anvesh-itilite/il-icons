@@ -74,7 +74,7 @@ function App() {
                   <div className="flex h-6 w-6 items-center justify-center ">
                     <Icon name={iconName} color="currentColor" />
                   </div>
-                  <span>{IconComponent.name}</span>
+                  <span>{iconName}</span>
                 </button>
               );
             })}
